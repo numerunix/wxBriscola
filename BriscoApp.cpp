@@ -41,7 +41,7 @@ bool BriscoApp::OnInit() {
 #else
     wxLocale::AddCatalogLookupPathPrefix(wxT("/usr/local/share/locale"));
 #endif //_WIN32
-    if (!m_locale->AddCatalog("wxbriscola"))
+    if (!m_locale->AddCatalog("wxenrico"))
        wxMessageBox(_("Impossibile trovare il catalogo del programma. Il programma si avviera' in italiano."), _("Attenzione"), wxICON_EXCLAMATION);
      m_locale->AddCatalog("wxstd");
      m_locale->AddCatalog("wxmsw");
